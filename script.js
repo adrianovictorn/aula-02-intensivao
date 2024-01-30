@@ -1,3 +1,5 @@
+const imagemVisualizacao = document.getElementById('imagem-visualizacao');
+
 const verdeCipreste = {
     nome: 'Verde-cipreste',
     pasta: 'imagens-verde-cipreste'
@@ -31,5 +33,7 @@ let imagemSelecionada = 1;
 
 
 function trocarImagem(){
-    const opcaoSelecionada = document.querySelector('[name="opcao-imagem"]')
+    const idOpcaoSelecionada = document.querySelector('[name="opcao-imagem"]:checked').id;
+    imagemSelecionada = idOpcaoSelecionada.charAt(0);
+    imagemSelecionada.src = './imagens/opcoes-cores/imagens-azul-inverno/imagem-' + imagemSelecionada+ '.jpeg'
 }
