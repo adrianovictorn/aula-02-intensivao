@@ -24,3 +24,12 @@ const rosaClaro = {
 }
 
 const opcoesCores = [verdeCipreste,azulInverno,meiaNoite,estelar,rosaClaro];
+
+
+
+let imagemSelecionada = 1;
+
+
+function trocarImagem(){
+    const opcaoSelecionada = document.querySelector('[name="opcao-imagem"]')
+}
